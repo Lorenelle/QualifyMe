@@ -114,6 +114,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -122,6 +123,7 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
+    <Content Include="Views\Account\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -131,13 +133,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QualifyMe.DomainModels\QualifyMe.DomainModels.csproj">
       <Project>{cf273aca-137a-45cc-a0a6-17f5d3856803}</Project>
       <Name>QualifyMe.DomainModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QualifyMe.ServiceLayer\QualifyMe.ServiceLayer.csproj">
+      <Project>{0d8db367-99f0-4914-8b62-72b54763d770}</Project>
+      <Name>QualifyMe.ServiceLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QualifyMe.ViewModels\QualifyMe.ViewModels.csproj">
+      <Project>{c814ec6d-2d37-4dd6-a770-9e645b5efb61}</Project>
+      <Name>QualifyMe.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
