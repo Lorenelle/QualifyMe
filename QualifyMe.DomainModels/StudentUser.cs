@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace QualifyMe.DomainModels
 {
-    public class StudentUser
+    public class StudentUser : QualifyMeDatabaseDbContext
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

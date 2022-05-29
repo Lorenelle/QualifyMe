@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QualifyMe.DomainModels
 {
-    public class QualifyMeDatabaseDbContext
+    public class QualifyMeDatabaseDbContext :DbContext
     {
         public DbSet<StudentUser> StudentUsers { get; set; }
         public DbSet<CompanyUser> CompanyUsers { get; set; }
