@@ -8,9 +8,34 @@
         <form novalidate="novalidate" action="/account/register" method="post" class="needs-validation">
             @Html.AntiForgeryToken()
             <div class="form-row">
-                <div class="form-group col-sm-12">
-                    <label for="txtName">Name</label>
-                    <input type="text" class="form-control" id="txtName" placeholder="Enter name" name="Name" required="required" pattern="^[a-zA-Z ]*$" autofocus="autofocus" />
+                <div class="form-group col-sm-6">
+                    <label for="StudentID"> First Name</label>
+                    <input type="text" class="form-control" id="StudentID" placeholder="Student ID" name="StudentID" required="required" pattern="^[123]\d{9}$" />
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter name [alphabets only].
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="FirstName"> First Name</label>
+                    <input type="text" class="form-control" id="FirstName" placeholder="First Name" name="FirstName" required="required" pattern="^[a-zA-Z ]*$" autofocus="autofocus" />
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter name [alphabets only].
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="LastName"> Last Name</label>
+                    <input type="text" class="form-control" id="LastName" placeholder="Last Name" name="LastName" required="required" pattern="^[a-zA-Z ]*$" autofocus="autofocus" />
                     <div class="valid-feedback">
                         Looks good!
                     </div>
