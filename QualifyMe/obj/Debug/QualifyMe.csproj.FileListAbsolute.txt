@@ -104,3 +104,5 @@ C:\src\projects\Github's\QualifyMe\QualifyMe\bin\System.Web.Optimization.dll
 C:\src\projects\Github's\QualifyMe\QualifyMe\bin\WebGrease.dll
 C:\src\projects\Github's\QualifyMe\QualifyMe\bin\Antlr3.Runtime.pdb
 C:\src\projects\Github's\QualifyMe\QualifyMe\bin\System.Web.Optimization.xml
+C:\Users\II\Documents\mvc\CAPSTONE\QualifyMe\QualifyMe\obj\Debug\QualifyMe.csproj.AssemblyReference.cache
+C:\Users\II\Documents\mvc\CAPSTONE\QualifyMe\QualifyMe\obj\Debug\QualifyMe.csproj.CoreCompileInputs.cache
