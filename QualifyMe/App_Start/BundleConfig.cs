@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Optimization;
 
-namespace QualifyMe.App_Start
+namespace QualifyMe
 {
     public class BundleConfig
     {
