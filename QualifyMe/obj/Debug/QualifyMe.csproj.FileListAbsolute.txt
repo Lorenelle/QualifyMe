@@ -85,3 +85,17 @@ C:\src\projects\Github's\QualifyMe\QualifyMe\obj\Debug\QualifyMe.csproj.CoreComp
 C:\src\projects\Github's\QualifyMe\QualifyMe\obj\Debug\QualifyMe.csproj.CopyComplete
 C:\src\projects\Github's\QualifyMe\QualifyMe\obj\Debug\QualifyMe.dll
 C:\src\projects\Github's\QualifyMe\QualifyMe\obj\Debug\QualifyMe.pdb
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\QualifyMe.Repositories.dll
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\QualifyMe.ServiceLayer.dll
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\QualifyMe.ViewModels.dll
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\AutoMapper.dll
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\System.ValueTuple.dll
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\QualifyMe.Repositories.pdb
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\QualifyMe.Repositories.dll.config
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\QualifyMe.ServiceLayer.pdb
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\QualifyMe.ServiceLayer.dll.config
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\QualifyMe.ViewModels.pdb
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\QualifyMe.ViewModels.dll.config
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\AutoMapper.pdb
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\AutoMapper.xml
+C:\src\projects\Github's\QualifyMe\QualifyMe\bin\System.ValueTuple.xml

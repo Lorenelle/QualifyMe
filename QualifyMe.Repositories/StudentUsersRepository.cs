@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,8 +15,9 @@ namespace QualifyMe.Repositories
             void UpdateStudentUserDetails(StudentUser u);
             void UpdateStudentUserPassword(StudentUser u);
             void DeleteStudentUser(int uid);
-           
-        }
+            int GetLatestStudentUserID();
+
+    }
         public class StudentUsersRepository : IStudentUsersRepository
         {
             QualifyMeDatabaseDbContext db;
@@ -33,17 +35,41 @@ namespace QualifyMe.Repositories
 
             public void UpdateStudentUserDetails(StudentUser u)
             {
-                throw new NotImplementedException();
+                StudentUser us = db.StudentUsers.Where(temp => temp.UserID == u.UserID).FirstOrDefault();
+                if (us != null)
+                {
+                    us.FirstName = u.FirstName;
+                    us.LastName = u.LastName;
+                    us.Mobile = u.Mobile;
+                    db.SaveChanges();
+                }
             }
 
             public void UpdateStudentUserPassword(StudentUser u)
             {
-                throw new NotImplementedException();
+                    StudentUser us = db.StudentUsers.Where(temp => temp.UserID == u.UserID).FirstOrDefault();
+                    if (us != null)
+                    {
+                        us.PasswordHash = u.PasswordHash;
+                        db.SaveChanges();
+                    }
             }
 
             public void DeleteStudentUser(int uid)
             {
-                throw new NotImplementedException();
+                StudentUser us = db.StudentUsers.Where(temp => temp.UserID == uid).FirstOrDefault();
+                if (us != null)
+                {
+                    db.StudentUsers.Remove(us);
+                    db.SaveChanges();
+                }
             }
-        }
+
+            public int GetLatestStudentUserID()
+            {
+            int uid = db.StudentUsers.Select(temp => temp.UserID).Max();
+            return uid;
+            }
+            
+    }
 }
