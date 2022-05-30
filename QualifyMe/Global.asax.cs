@@ -8,7 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
 using System.Web.Optimization;
-using QualifyMe.App_Start;
+
 
 namespace QualifyMe
 {
