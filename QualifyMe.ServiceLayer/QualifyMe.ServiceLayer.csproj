@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QualifyMe.ServiceLayer</RootNamespace>
     <AssemblyName>QualifyMe.ServiceLayer</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +48,10 @@
     <ProjectReference Include="..\QualifyMe.DomainModels\QualifyMe.DomainModels.csproj">
       <Project>{cf273aca-137a-45cc-a0a6-17f5d3856803}</Project>
       <Name>QualifyMe.DomainModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QualifyMe.Repositories\QualifyMe.Repositories.csproj">
+      <Project>{228dd766-e2f0-4261-a10c-ff6e11ac343c}</Project>
+      <Name>QualifyMe.Repositories</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

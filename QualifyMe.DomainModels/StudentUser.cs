@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace QualifyMe.DomainModels
 {
-    public class StudentUser
+    public class StudentUser : QualifyMeDatabaseDbContext
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -18,10 +18,8 @@ namespace QualifyMe.DomainModels
         public  string LastName { get; set; }
         public string Email { get; set; }
         public string PasswordHash { get; set; }
-        public string Name { get; set; }
         public string Mobile { get; set; }
-        public bool IsAdmin { get; set; }
-        public bool IsCompany { get; set; }
+      
 
 
     }
